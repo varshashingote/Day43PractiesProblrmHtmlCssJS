@@ -1,0 +1,64 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+</style>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>
+        <p><b>Artical1</b></p>
+        <p>
+            A New Age Management Program for developing Future Leaders in a disruptive environment. 
+            The Program aims at developing leadership acumen, strategic thinking, decision making and 
+            problem solving skills required to managing businesses in a VUCA environment.
+           <hr> </p>
+       <p><b>Artical2</b></p>
+        <p>
+            While Leaders can learn on the job, the Advanced Management Program is a 
+            structured intervention that helps Leaders prepare themselves to manage this
+            transition and take on higher-order roles and responsibilities. It accelerates 
+            overall leadership skills through developing adjacent skis and competencies to
+            lead multiple functional areas & manage teams effectively.
+            <hr></p>
+        <p><b>Artical3</b></p>
+        <p>
+            The program is beneficial for Senior Managers and Leaders with more than 8 years
+            of experience, who are already in Leadership positions or preparing themselves to
+            transition into Leadership positions
+        </p>
+      
+    </article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+    
+  </div>
+  <footer>Footer</footer>
+</body>
